@@ -71,7 +71,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="-Jquery," />
 
 
 
@@ -87,12 +87,17 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="FinnAlice个人博客">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+<meta name="description" content="$.when().done().fail();$.when().then();因为它的内部实现是ajax，本来就是异步的，所以是异步编程。jQuery.when(deferreds)参数deferreds，一个或多个延时对象或JS对象，我们初略的认为它就是一个或多个异步请求。例如：[javascript] view plain copy$.when($.ajax(“page1.php”), $.a">
+<meta name="keywords" content="-Jquery">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Jquery的$.when()解决$.ajax({})嵌套问题">
+<meta property="og:url" content="http://yoursite.com/2017/04/15/my-new-post/index.html">
 <meta property="og:site_name" content="FinnAlice个人博客">
+<meta property="og:description" content="$.when().done().fail();$.when().then();因为它的内部实现是ajax，本来就是异步的，所以是异步编程。jQuery.when(deferreds)参数deferreds，一个或多个延时对象或JS对象，我们初略的认为它就是一个或多个异步请求。例如：[javascript] view plain copy$.when($.ajax(“page1.php”), $.a">
+<meta property="og:updated_time" content="2017-04-15T05:13:28.088Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="FinnAlice个人博客">
+<meta name="twitter:title" content="Jquery的$.when()解决$.ajax({})嵌套问题">
+<meta name="twitter:description" content="$.when().done().fail();$.when().then();因为它的内部实现是ajax，本来就是异步的，所以是异步编程。jQuery.when(deferreds)参数deferreds，一个或多个延时对象或JS对象，我们初略的认为它就是一个或多个异步请求。例如：[javascript] view plain copy$.when($.ajax(“page1.php”), $.a">
 
 
 
@@ -120,13 +125,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/archives/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/04/15/my-new-post/"/>
 
 
 
 
 
-  <title> 归档 | FinnAlice个人博客 </title>
+  <title> Jquery的$.when()解决$.ajax({})嵌套问题 | FinnAlice个人博客 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -151,7 +156,7 @@
     
   
 
-  <div class="container sidebar-position-left  page-archive  ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -245,66 +250,162 @@
           <div id="content" class="content">
             
 
-  <section id="posts" class="posts-collapse">
-    <span class="archive-move-on"></span>
+  <div id="posts" class="posts-expand">
+    
 
-    <span class="archive-page-counter">
-      
-      
-      
-        
-      
-      嗯..! 目前共计 1 篇日志。 继续努力。
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/04/15/my-new-post/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="finn alice">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="FinnAlice个人博客">
     </span>
 
     
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                Jquery的$.when()解决$.ajax({})嵌套问题
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-04-15T00:00:00+08:00">
+                2017-04-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Jquery/" itemprop="url" rel="index">
+                    <span itemprop="name">Jquery</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
 
       
       
-      
 
+      
+        <p>$.when().done().fail();<br>$.when().then();<br>因为它的内部实现是ajax，本来就是异步的，所以是异步编程。<br>jQuery.when(deferreds)<br>参数deferreds，一个或多个延时对象或JS对象，我们初略的认为它就是一个或多个异步请求。<br>例如：<br>[javascript] view plain copy<br>$.when($.ajax(“page1.php”), $.ajax(“page2.php”))<br>when()函数常常和done()函数、fail()函数、then()函数联合使用：<br>done(Function func) - 当deferreds中的处理都完成的时候执行Function回调函数<br>fail(Function func) - 当deferreds中有一个处理失败的时候执行Function回调函数<br>then(Function func1,Function func2)- 结合了done和fail函数，当都成功执行func1，当有一个失败执行func2</p>
+
+      
+    </div>
+
+    <div>
       
         
-        <div class="collection-title">
-          <h2 class="archive-year motion-element" id="archive-year-2017">2017</h2>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Jquery/" rel="tag"># -Jquery</a>
+          
         </div>
       
+
+      
+        
       
 
       
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2017/04/15/my-new-post/" itemprop="url">
-              
-                <span itemprop="name">Jquery的$.when()解决$.ajax({})嵌套问题</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-04-15T00:00:00+08:00"
-              content="2017-04-15" >
-          04-15
-        </time>
-      </div>
-
-    </header>
+      
+      
+    </footer>
   </article>
 
 
 
-    
-
-  </section>
-
-  
-
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -312,6 +413,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -548,11 +653,9 @@
 
 
   
-  
-    <script type="text/javascript" id="motion.page.archive">
-      $('.archive-year').velocity('transition.slideLeftIn');
-    </script>
-  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
 
 
   
